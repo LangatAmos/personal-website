@@ -1,0 +1,173 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #b3dddd;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: #b3dddd;
+}
+.navbar .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header{
+    max-width: 80%;
+    margin: auto;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+}
+.navbar .logo a span{
+    color: rgb(7, 199, 224);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: rgb(7, 199, 224);
+}
+.navbar .nav-links li{
+    list-style: none;
+    display: inline-block;
+    color: black;
+    transition: color 0.3s ease;
+}
+.navbar .nav-links li a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .nav-links li a:hover{
+    color: grey;
+
+}
+.home{
+    display: flex;
+    background-color: #fff;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+}
+.home .main{
+    margin: auto 0 auto 100px;
+
+}
+.home .home-content .intro{
+    font-size: 30px;
+}
+.home .home-content .name{
+    font-size: 75px;
+    font-weight: 900;
+    margin: -3px;
+}
+.home .home-content .title{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .title span{
+    color: rgb(7, 199, 224);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .image-profile{
+    margin: auto 0 auto 0;
+}
+
+
+/* about section styling */
+
+.about{
+    padding: 100px 0;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about-title{
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+.about-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about-title::after{
+    content: "Who I am";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(7, 199, 224);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-main .column-left{
+    width: 45%;
+}
+.about .about-main .column-right{
+    width: 55%;
+}
+.about .about-main .column-left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about .about-main .column-right .about-text{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.about .about-main .column-right .about-text span{
+    color: rgb(7, 199, 224);
+}
+.about .about-main .column-right p{
+    text-align: justify;
+    color: black;
+}
+.about .about-main .column-right a{
+    display: inline-block;
+    background: #b3dddd;
+    color: rgb(2, 41, 46);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #b3dddd;
+    transition: all 0.3s ease;
+}
